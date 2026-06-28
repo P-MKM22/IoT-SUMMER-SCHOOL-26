@@ -1,0 +1,35 @@
+# Week 01 - Introduction to Arduino and LED Blinking
+
+## Overview
+This week focused on understanding the fundamentals of embedded systems and Arduino programming. The experiment introduced basic digital output control by implementing an LED blinking application, providing hands-on experience with writing, uploading, and testing Arduino programs.
+
+## Objectives
+- Understand the Arduino development environment.
+- Learn the structure of an Arduino program (`setup()` and `loop()`).
+- Configure digital output pins.
+- Control an LED using the `digitalWrite()` and `delay()` functions.
+- Build a foundation for future IoT and embedded systems projects.
+
+## Experiment
+### LED Blinking
+A simple Arduino program that continuously turns an LED ON and OFF at one-second intervals to demonstrate basic digital output control.
+
+## Components Used
+- Arduino Uno
+- LED
+- 220Ω Resistor
+- Breadboard
+- Jumper Wires
+- USB Cable
+
+## Learning Outcomes
+- Gained familiarity with the Arduino IDE.
+- Learned to upload and execute programs on an Arduino board.
+- Understood digital output operations.
+- Developed a basic understanding of embedded programming concepts.
+
+## Files
+- `led_blink.ino` – Arduino source code for the LED blinking experiment.
+
+## Author
+**P Meet Kumar**
