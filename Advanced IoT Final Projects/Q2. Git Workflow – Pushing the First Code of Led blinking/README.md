@@ -1,4 +1,4 @@
-# Project 02 – LED Blinking using Arduino Uno
+# Documentation 02 – LED Blinking using Arduino Uno
 
 ## Project Overview
 
