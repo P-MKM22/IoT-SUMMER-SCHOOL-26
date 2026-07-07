@@ -1,70 +1,55 @@
 # Version 1.0 – Basic LED Blinking
 
-## Project overview
+## Project Overview
 
-This version demonstrates the basic LED blinking program using an Arduino Uno. An LED connected to digital pin 9 blinks continuously with a fixed delay of 500 milliseconds, introducing the concept of digital output and timing control.
+Version 1.0 demonstrates the basic LED blinking program using an Arduino Uno. The LED turns ON and OFF at a fixed time interval.
 
 ---
 
 ## Objective
 
-- Understand digital output using Arduino.
-- Learn how to control an LED.
-- Implement a continuous blinking pattern.
-- Verify the circuit using simulation.
+- Learn Arduino digital output.
+- Blink an LED using delay().
+- Verify the basic hardware setup.
 
 ---
 
-## Components required
+## Components Used
 
 - Arduino Uno
-- Breadboard
 - LED
 - 220 Ω Resistor
+- Breadboard
 - Jumper Wires
 
 ---
 
-## Software used
+## Folder Structure
 
-- Tinkercad
-- Arduino IDE
-- GitHub
-
----
-
-## Folder structure
-
-```text
+```
 Version 1.0
 │
-├── README.md
+├── Assets
+│   ├── Hardware setup (2).png
+│   └── Working demo of Ver1.0.mp4
+│
 ├── Code
 │   └── LED Blink.ino
-└── Assets
-    ├── Hardware setup.png
-    └── Wroking demo of ver1.0.mp4
+│
+└── README.md
 ```
-
----
-
-## Features
-
-- LED blinks continuously.
-- Blink interval of 500 milliseconds.
-- Simple digital output demonstration.
-- Successfully tested in simulation.
 
 ---
 
 ## Assets
 
-- Hardware Setup.png
-- LED Working.png
-- LED Blink Demo.mp4
+- Hardware setup (2).png
+- Working demo of Ver1.0.mp4
 
 ---
 
-## Next version
+## Learning Outcome
 
-Version 1.1 will introduce Serial Monitor output to display the blink count during execution.
+- Basic Arduino programming
+- Digital output control
+- LED interfacing
