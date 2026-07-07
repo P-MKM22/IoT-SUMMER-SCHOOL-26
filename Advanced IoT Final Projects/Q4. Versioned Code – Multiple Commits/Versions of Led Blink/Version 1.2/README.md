@@ -42,7 +42,14 @@ Version 1.2
 ```
 
 ---
+## Wokwi Simulation
 
+The complete online simulation for Version 1.2 is available on Wokwi.
+
+**Simulation Link:**
+https://wokwi.com/projects/468912961023727617
+
+The simulation demonstrates potentiometer-controlled LED blinking with real-time adjustment of the blinking speed.
 ## Assets
 
 - Blink control using Potentiometer.png
