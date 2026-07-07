@@ -1,4 +1,4 @@
-# Documentation – Q3 Branching Strategy
+# Documentation of Question 03
 
 ## Introduction
 
