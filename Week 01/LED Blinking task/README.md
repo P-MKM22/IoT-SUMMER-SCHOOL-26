@@ -101,11 +101,10 @@ Observe the LED connected to Pin 9. It should blink continuously.
 ## Folder Structure
 
 ```text
-Q5 README Documentation
+Week 01
 │
-├── Assets
-│   ├── Hardware Setup.png
-│   ├── LED Working.png
+├── LED Blinking task
+│   ├── README Edit.png
 │   └── README Preview.png (Optional)
 │
 ├── Documentation Folder
@@ -117,9 +116,7 @@ Q5 README Documentation
 ---
 
 ## Project Assets
-
-- Hardware Setup.png
-- LED Working.png
+- README Edit.png
 - README Preview.png (Optional)
 
 ---
