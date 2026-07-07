@@ -47,6 +47,14 @@ Version 1.0
 - Working demo of Ver1.0.mp4
 
 ---
+## Wokwi Simulation
+
+The complete online simulation for Version 1.0 is available on Wokwi.
+
+**Simulation Link:**
+https://wokwi.com/projects/468907653684848641
+
+The simulation demonstrates the basic LED blinking implementation using an Arduino Uno.
 
 ## Learning Outcome
 
