@@ -121,6 +121,14 @@ After completing this project, I was able to:
 - Extend the project using sensors and communication modules.
 
 ---
+## Online Simulation
+
+This project can be simulated directly in Wokwi without requiring any hardware setup.
+
+**Simulation Link:**  
+[Launch Wokwi Simulation](https://wokwi.com/projects/468887976259740673)
+
+> **Platform:** Wokwi Online Simulator
 
 ## Author
 
