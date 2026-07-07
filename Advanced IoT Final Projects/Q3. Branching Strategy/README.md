@@ -1,4 +1,4 @@
-# Q3 – Branching Strategy
+# Q 03 – Branching Strategy
 
 ## Task overview
 
