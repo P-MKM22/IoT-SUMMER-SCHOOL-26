@@ -1,4 +1,4 @@
-# Project 01 – Repository Setup and Initial Configuration
+# Q 01 – Repository Setup and Initial Configuration
 
 ## Project Overview
 
