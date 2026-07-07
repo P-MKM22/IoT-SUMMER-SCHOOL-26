@@ -41,7 +41,14 @@ Version 1.3
 ```
 
 ---
+## Wokwi Simulation
 
+The complete online simulation for Version 1.3 is available on Wokwi.
+
+**Simulation Link:**
+https://wokwi.com/projects/468914269770638337
+
+This version focuses on improving code documentation by introducing a professional header block while maintaining the same project functionality.
 ## Assets
 
 - Header block.png
