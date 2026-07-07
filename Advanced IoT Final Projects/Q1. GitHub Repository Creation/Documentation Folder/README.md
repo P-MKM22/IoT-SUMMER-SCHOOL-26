@@ -1,4 +1,4 @@
-# Documentation – Q1 GitHub Repository Setup
+# Documentation of Q1 
 
 ## Introduction
 
