@@ -49,7 +49,14 @@ Version 1.1
 - Working demo of Ver1.1.mp4
 
 ---
+## Wokwi Simulation
 
+The complete online simulation for Version 1.1 is available on Wokwi.
+
+**Simulation Link:**
+https://wokwi.com/projects/468910988683483137
+
+This simulation demonstrates LED blinking with Serial Monitor integration for monitoring the blink count.
 ## Learning Outcome
 
 - Serial communication
