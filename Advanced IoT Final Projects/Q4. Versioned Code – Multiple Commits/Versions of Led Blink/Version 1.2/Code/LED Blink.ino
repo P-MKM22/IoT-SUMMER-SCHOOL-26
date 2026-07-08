@@ -1,3 +1,4 @@
+// Improved potentiometer delay mapping
 const int Pin = 9;
 const int potPin = A0;
 
