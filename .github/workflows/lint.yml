@@ -1,1 +1,20 @@
+name: Count Arduino Files
 
+on:
+  push:
+
+jobs:
+  count-ino-files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run Python Script
+        run: python "Q8 CI-CD with GitHub Actions/Code/count_ino.py"
