@@ -32,7 +32,6 @@ Q8 CI-CD with GitHub Actions
 │
 ├── Code
 │   ├── count_ino.py
-│   └── lint.yml
 │
 ├── Documentation Folder
 │   └── README.md
