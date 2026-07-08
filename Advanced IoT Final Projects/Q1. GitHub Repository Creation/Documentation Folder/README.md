@@ -24,14 +24,16 @@ This documentation describes the process of creating and configuring the GitHub 
 
 **Owner**
 
-P Meet Kumar
+---
+**P Meet Kumar**
 
-**Roll Number**
+**Roll Number:** IoT 009
 
-IoT 009
+**Program:** IoT and Drone Building Summer School 2026
+
+**Institution:** Indian Institute of Technology Jammu (IIT Jammu)
 
 ---
-
 ## Repository configuration
 
 The following configurations were completed during the repository setup:
