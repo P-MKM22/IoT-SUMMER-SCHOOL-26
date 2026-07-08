@@ -130,8 +130,16 @@ This project can be simulated directly in Wokwi without requiring any hardware s
 
 > **Platform:** Wokwi Online Simulator
 
+---
+
 ## Author
 
-**P Meet Kumar**  
-**Roll Number:** IoT 009  
-**Program:** IoT and Drone Building 2026
+**P Meet Kumar**
+
+**Roll Number:** IoT 009
+
+**Program:** IoT and Drone Building Summer School 2026
+
+**Institution:** Indian Institute of Technology Jammu (IIT Jammu)
+
+---
