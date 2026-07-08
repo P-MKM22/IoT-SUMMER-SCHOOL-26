@@ -1,3 +1,4 @@
+// Future enhancement: CSV serial logging
 const int Pin = 9;
 
 void setup() {
