@@ -22,9 +22,9 @@ This documentation describes the process of creating and configuring the GitHub 
 
 `IoT-SUMMER-SCHOOL-26`
 
+---
 **Owner**
 
----
 **P Meet Kumar**
 
 **Roll Number:** IoT 009
