@@ -1,3 +1,4 @@
+// Future enhancement: RGB LED support
 const int Pin = 9;
 int blinkCount = 0;
 
