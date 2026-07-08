@@ -1,4 +1,4 @@
-# Q43 – Smart Door Lock with OTP
+# Q 43 – Smart Door Lock with OTP
 
 ## Problem Statement
 
