@@ -97,10 +97,16 @@ After completing this project, I learned how to:
 
 ---
 
+---
+
 ## Author
 
-**Name:** P Meet Kumar
+**P Meet Kumar**
 
 **Roll Number:** IoT 009
 
-**Program:** IoT and Drone Building
+**Program:** IoT and Drone Building Summer School 2026
+
+**Institution:** Indian Institute of Technology Jammu (IIT Jammu)
+
+---
