@@ -169,3 +169,17 @@ After completing this task, the following concepts were learned:
 ## Conclusion
 
 This task demonstrates the practical use of GitHub's issue tracking and milestone management features. By creating issues, assigning labels and milestones, and resolving them through commit references, a structured and professional development workflow was established. These practices are essential for collaborative software development and effective project management.
+
+---
+
+## Author
+
+**P Meet Kumar**
+
+**Roll Number:** IoT 009
+
+**Program:** IoT and Drone Building Summer School 2026
+
+**Institution:** Indian Institute of Technology Jammu (IIT Jammu)
+
+---
