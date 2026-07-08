@@ -85,3 +85,17 @@ After completing this question, the following skills were developed:
 ## Conclusion
 
 This question emphasizes the importance of documentation in software and embedded systems development. A well-written README not only explains the project but also enables others to understand, use, and maintain it efficiently. Proper documentation is an essential part of professional GitHub repositories and contributes significantly to project quality.
+
+---
+
+## Author
+
+**P Meet Kumar**
+
+**Roll Number:** IoT 009
+
+**Program:** IoT and Drone Building Summer School 2026
+
+**Institution:** Indian Institute of Technology Jammu (IIT Jammu)
+
+---
