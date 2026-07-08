@@ -2,6 +2,8 @@ name: Count Arduino Files
 
 on:
   push:
+    branches:
+      - main
 
 jobs:
   count-ino-files:
@@ -11,10 +13,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Run Python Script
-        run: python "Q8 CI-CD with GitHub Actions/Code/count_ino.py"
+        run: |
+          python "Advanced IoT Final Projects/Q8. CI,CD with GitHub Actions/Code/count_ino.py"
