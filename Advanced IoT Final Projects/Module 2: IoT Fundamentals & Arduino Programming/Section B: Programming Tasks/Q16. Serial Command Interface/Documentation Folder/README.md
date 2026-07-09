@@ -292,10 +292,11 @@ Q16. Serial Command Interface
 
 # Wokwi Simulation
 
-**Project Link**
+This Wokwi simulation demonstrates the complete implementation of the **Serial Command Interface**. It allows users to test all supported Serial commands (`LED_ON`, `LED_OFF`, `BLINK_X`, `STATUS`, and `RESET`) and observe the built-in LED behavior and Serial Monitor responses in a virtual Arduino UNO environment.
 
-> *(Paste your Wokwi simulation link here.)*
+**Project Link:**
 
+https://wokwi.com/projects/469067354722784257
 ---
 
 # Precautions
