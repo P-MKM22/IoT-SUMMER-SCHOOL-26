@@ -103,6 +103,56 @@ A technical presentation was delivered covering:
 
 ---
 
+# Additional Practical Project
+
+During Week 02, an additional Arduino-based embedded systems project was successfully designed, simulated, and documented to strengthen the understanding of digital electronics, timing operations, and event-driven programming.
+
+## Traffic Light Controller using Arduino UNO
+
+### Components Used
+
+- Arduino UNO
+- Breadboard
+- Red LED
+- Yellow LED
+- Green LED
+- Push Button
+- 220Ω Resistors
+- 10kΩ Pull-down Resistor
+- Jumper Wires
+
+### Project Description
+
+The Traffic Light Controller simulates a real-world traffic signal using three LEDs representing the **Red**, **Yellow**, and **Green** lights. The system follows a predefined sequence in which the RED light remains ON for **5 seconds**, the YELLOW light for **2 seconds**, and the GREEN light for **4 seconds**.
+
+A pedestrian push button is integrated into the system to provide a safe road-crossing mechanism. Whenever the button is pressed, the controller immediately interrupts the current traffic cycle, activates the RED signal, and holds it for **8 seconds** before resuming the normal traffic sequence.
+
+The system continuously prints the current traffic light state along with the execution timestamp (`millis()`) to the Serial Monitor for monitoring and debugging.
+
+### Features
+
+- Automatic Traffic Light Sequencing
+- Pedestrian Crossing Request
+- Immediate RED Signal Override
+- 8-Second Pedestrian Safety Timer
+- Serial Monitor Timestamp Logging
+- Modular Arduino Program
+- Wokwi Simulator Compatible
+
+### Technologies Used
+
+- Arduino Programming
+- Digital Output Control
+- Push Button Interfacing
+- Timing Operations
+- Serial Communication
+- Wokwi Online Simulator
+
+### Wokwi Simulation
+
+https://wokwi.com/projects/469047666148879361
+
+---
 # Assignments
 
 ## Assignment 1 – TMP36 Temperature Sensor
