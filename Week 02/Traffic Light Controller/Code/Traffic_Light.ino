@@ -5,7 +5,7 @@ File Name   : traffic_light.ino
 
 Author      : P Meet Kumar
 Roll Number : IoT 009
-Date        : 09 July 2026
+Date        : 21 June 2026
 
 Program     : IoT and Drone Building Summer School 2026
 Institution : Indian Institute of Technology Jammu (IIT Jammu)
