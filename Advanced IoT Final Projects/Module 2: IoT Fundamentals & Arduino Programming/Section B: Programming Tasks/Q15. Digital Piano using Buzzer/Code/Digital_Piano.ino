@@ -15,7 +15,6 @@ A 4-key digital piano using Arduino UNO and a passive buzzer.
 - Uses INPUT_PULLUP
 ------------------------------------------------------------
 */
-// Digital Piano Project
 #define BUTTON_DO    2
 #define BUTTON_RE    3
 #define BUTTON_MI    4
