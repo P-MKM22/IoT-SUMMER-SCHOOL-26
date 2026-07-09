@@ -1,4 +1,4 @@
-# Q36 – MQTT vs HTTP Comparison
+# Q 36 – MQTT vs HTTP Comparison
 
 ## Question
 
