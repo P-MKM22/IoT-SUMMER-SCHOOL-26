@@ -1,4 +1,4 @@
-# Q13 – Arduino UNO Pin Types
+# Q 13 – Arduino UNO Pin Types
 
 ## Question
 
