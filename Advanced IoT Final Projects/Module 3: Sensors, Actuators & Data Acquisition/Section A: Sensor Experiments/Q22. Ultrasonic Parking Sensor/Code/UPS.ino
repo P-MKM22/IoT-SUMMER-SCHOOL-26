@@ -1,117 +1,127 @@
 /*
 Project: Ultrasonic Parking Sensor
-Question: Q22 - Ultrasonic Parking Sensor
+Question: Q22
 Author: P Meet Kumar
 Roll Number: IoT 009
 Program: IoT and Drone Building Summer School 2026
-Institution: Indian Institute of Technology Jammu (IIT Jammu)
-
-Hardware:
-- Arduino UNO
-- HC-SR04 Ultrasonic Sensor
-- Yellow LED
-- Red LED
-- Active Buzzer
+Institution: IIT Jammu
 
 Description:
-Measures parking distance using the HC-SR04 sensor and provides
-visual and audible alerts based on the detected distance.
+Parking distance alert system using HC-SR04.
 Uses millis() for non-blocking timing.
 */
 
 const int trigPin = 9;
 const int echoPin = 10;
 
+const int greenLED = 5;
 const int yellowLED = 6;
 const int redLED = 7;
 const int buzzer = 8;
 
 unsigned long previousMillis = 0;
-bool outputState = false;
+bool blinkState = false;
 
 void setup() {
+
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
 
+  pinMode(greenLED, OUTPUT);
   pinMode(yellowLED, OUTPUT);
   pinMode(redLED, OUTPUT);
+
   pinMode(buzzer, OUTPUT);
 
   Serial.begin(9600);
-
-  digitalWrite(yellowLED, LOW);
-  digitalWrite(redLED, LOW);
-  digitalWrite(buzzer, LOW);
 }
 
 void loop() {
 
-  // Measure distance
   float distance = getDistance();
 
-  // Display distance
   Serial.print("Distance: ");
   Serial.print(distance);
   Serial.println(" cm");
 
   unsigned long currentMillis = millis();
 
-  // SAFE ZONE
+  // ---------------- SAFE ----------------
   if (distance > 50) {
 
     Serial.println("SAFE");
 
     digitalWrite(yellowLED, LOW);
     digitalWrite(redLED, LOW);
-    digitalWrite(buzzer, LOW);
 
+    if (currentMillis - previousMillis >= 500) {
+
+      previousMillis = currentMillis;
+      blinkState = !blinkState;
+
+      digitalWrite(greenLED, blinkState);
+    }
+
+    noTone(buzzer);
   }
 
-  // WARNING ZONE
-  else if (distance > 20 && distance <= 50) {
+  // ------------- WARNING ----------------
+  else if (distance > 20) {
 
+    digitalWrite(greenLED, LOW);
     digitalWrite(yellowLED, HIGH);
     digitalWrite(redLED, LOW);
 
     if (currentMillis - previousMillis >= 500) {
-      previousMillis = currentMillis;
-      outputState = !outputState;
-      digitalWrite(buzzer, outputState);
-    }
 
+      previousMillis = currentMillis;
+      blinkState = !blinkState;
+
+      if (blinkState)
+        tone(buzzer, 1000);
+      else
+        noTone(buzzer);
+    }
   }
 
-  // DANGER ZONE
-  else if (distance > 10 && distance <= 20) {
+  // -------------- DANGER ----------------
+  else if (distance > 10) {
 
+    digitalWrite(greenLED, LOW);
     digitalWrite(yellowLED, LOW);
     digitalWrite(redLED, HIGH);
 
     if (currentMillis - previousMillis >= 200) {
-      previousMillis = currentMillis;
-      outputState = !outputState;
-      digitalWrite(buzzer, outputState);
-    }
 
+      previousMillis = currentMillis;
+      blinkState = !blinkState;
+
+      if (blinkState)
+        tone(buzzer, 1500);
+      else
+        noTone(buzzer);
+    }
   }
 
-  // STOP IMMEDIATELY
+  // ------------ VERY CLOSE --------------
   else {
 
-    digitalWrite(buzzer, HIGH);
+    digitalWrite(greenLED, LOW);
+
+    tone(buzzer, 2000);
 
     if (currentMillis - previousMillis >= 100) {
+
       previousMillis = currentMillis;
-      outputState = !outputState;
+      blinkState = !blinkState;
 
-      digitalWrite(yellowLED, outputState);
-      digitalWrite(redLED, outputState);
+      digitalWrite(yellowLED, blinkState);
+      digitalWrite(redLED, blinkState);
     }
-
   }
 }
 
-// Function to measure distance using HC-SR04
+// Measure distance using HC-SR04
 float getDistance() {
 
   long duration;
@@ -124,9 +134,11 @@ float getDistance() {
 
   digitalWrite(trigPin, LOW);
 
-  duration = pulseIn(echoPin, HIGH);
+  duration = pulseIn(echoPin, HIGH, 30000);
 
-  // Distance calculation
+  if (duration == 0)
+    return 400;
+
   float distance = (duration * 0.034) / 2.0;
 
   return distance;
