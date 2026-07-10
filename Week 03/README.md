@@ -2,7 +2,7 @@
 
 ## Overview
 
-Week 03 focused on integrating IoT concepts into real-world applications through API communication, embedded programming, drone technology, and final project development. We learned how to connect ESP32 with online weather APIs, process live sensor data, and explored the architecture, hardware, software, and flight control systems of drones. The week concluded with the development and presentation of our final IoT project.
+Week 03 focused on integrating IoT concepts into real-world applications through REST API communication, environmental monitoring, embedded programming, drone technology, and final project development. During this week, we learned to connect the ESP32 with online weather services, interface environmental sensors, process live weather data, understand drone architecture and flight control systems, and develop a complete IoT project integrating multiple hardware components.
 
 ---
 
@@ -11,6 +11,9 @@ Week 03 focused on integrating IoT concepts into real-world applications through
 - Understand REST APIs and JSON data handling.
 - Integrate ESP32 with live weather services.
 - Interface DHT11 with ESP32.
+- Develop an Environmental Monitoring Station.
+- Read temperature and humidity in real time.
+- Implement CSV-based sensor data logging.
 - Learn drone architecture and flight control.
 - Study drone hardware and software components.
 - Understand GPS and Mission Planner software.
@@ -30,20 +33,26 @@ Week 03 focused on integrating IoT concepts into real-world applications through
 - API Response Handling
 - JSON Data Format
 
----
-
-### 2. Live Weather Monitoring System
+### 2. Live Weather Monitoring
 
 - ESP32 Wi-Fi Connectivity
-- DHT11 Sensor Integration
 - Open-Meteo API Integration
 - Reading Live Weather Data
-- Displaying Data on OLED
+- Displaying Weather Data on OLED
 - Debugging API Communication
 
----
+### 3. Environmental Monitoring
 
-### 3. Drone Technology Fundamentals
+- DHT11 Sensor Interfacing
+- Temperature Monitoring
+- Humidity Monitoring
+- Temperature Conversion (°C to °F)
+- CSV Data Logging
+- Serial Monitor Output
+- LED-Based Environmental Status Indication
+- Threshold-Based Decision Making
+
+### 4. Drone Technology Fundamentals
 
 - Introduction to UAVs (Unmanned Aerial Vehicles)
 - Types of Drones
@@ -52,9 +61,7 @@ Week 03 focused on integrating IoT concepts into real-world applications through
 - Principles of Flight
 - Fixed-Wing vs Rotary-Wing Drones
 
----
-
-### 4. Drone Hardware Components
+### 5. Drone Hardware Components
 
 - Drone Frame
 - BLDC Motors
@@ -65,9 +72,7 @@ Week 03 focused on integrating IoT concepts into real-world applications through
 - Radio Transmitter & Receiver
 - Propellers
 
----
-
-### 5. Flight Controller & Navigation
+### 6. Flight Controller & Navigation
 
 - Flight Controller Working
 - GPS Navigation
@@ -77,9 +82,7 @@ Week 03 focused on integrating IoT concepts into real-world applications through
 - Autonomous Navigation
 - Flight Stabilization
 
----
-
-### 6. Mission Planner Software
+### 7. Mission Planner Software
 
 - Introduction to Mission Planner
 - Flight Configuration
@@ -88,9 +91,7 @@ Week 03 focused on integrating IoT concepts into real-world applications through
 - Mission Planning
 - Parameter Configuration
 
----
-
-### 7. Flight Modes
+### 8. Flight Modes
 
 - Stabilize Mode
 - Altitude Hold (Alt Hold)
@@ -98,18 +99,14 @@ Week 03 focused on integrating IoT concepts into real-world applications through
 - Return to Launch (RTL)
 - Land Mode
 
----
+### 9. Drone Motion (Degrees of Freedom)
 
-### 8. Drone Motion (Degrees of Freedom)
+- Throttle (Z-axis Movement)
+- Pitch (Rotation about Y-axis)
+- Roll (Rotation about X-axis)
+- Yaw (Rotation about Z-axis)
 
-- **Throttle (Z-axis Movement)** – Controls the upward and downward movement of the drone.
-- **Pitch (Rotation about Y-axis)** – Moves the drone forward and backward.
-- **Roll (Rotation about X-axis)** – Tilts the drone left and right.
-- **Yaw (Rotation about Z-axis)** – Rotates the drone clockwise or anticlockwise.
-
----
-
-### 9. Drone Sensors
+### 10. Drone Sensors
 
 - GPS Module
 - IMU
@@ -118,15 +115,13 @@ Week 03 focused on integrating IoT concepts into real-world applications through
 - Barometer
 - Compass
 
----
-
-### 10. IoT Final Project Development
+### 11. IoT Final Project Development
 
 **Project Title**
 
 **IoT-Based Gesture Controlled Mortal Kombat Game using ESP32, OLED Display, LEDs, and MPU6050 IMU**
 
-Topics Covered
+**Topics Covered**
 
 - Project Planning
 - Hardware Integration
@@ -140,9 +135,7 @@ Topics Covered
 - System Testing
 - Project Optimization
 
----
-
-### 11. Project Presentation
+### 12. Project Presentation
 
 - Project Demonstration
 - Working Principle
@@ -159,6 +152,12 @@ Topics Covered
 - Connected ESP32 to Wi-Fi.
 - Retrieved weather data using the Open-Meteo REST API.
 - Interfaced the DHT11 sensor with ESP32.
+- Built an Environmental Monitoring Station using ESP32 and DHT11.
+- Measured temperature in Celsius and Fahrenheit.
+- Measured relative humidity.
+- Displayed sensor readings in CSV format on the Serial Monitor.
+- Implemented Red and Green LED status indicators based on environmental conditions.
+- Recorded environmental data in a CSV file for analysis.
 - Displayed live weather information on the OLED display.
 - Studied drone hardware components and their functions.
 - Understood Mission Planner software and drone flight modes.
@@ -173,19 +172,33 @@ Topics Covered
 
 ### Comprehensive Assignment
 
-- Solved a set of **17 questions** covering the concepts learned throughout Weeks 1, 2, and 3, including IoT fundamentals, communication protocols, sensors, embedded programming, APIs, and drone technology.
+Completed a comprehensive assignment covering concepts from **Weeks 1, 2, and 3**, including:
+
+- IoT Fundamentals
+- Embedded Programming
+- Communication Protocols
+- REST APIs
+- Environmental Monitoring
+- Sensor Interfacing
+- Data Logging
+- Drone Technology
+- Flight Controllers
+- GPS Navigation
+- IoT System Design
 
 ---
 
 ## Tools & Software Used
 
 - Arduino IDE
-- ESP32
+- ESP32 DevKit
 - DHT11 Sensor
+- DHT22 Sensor (Wokwi Simulation)
 - MPU6050 IMU
 - OLED Display (SSD1306)
 - Open-Meteo API
 - Mission Planner
+- Wokwi Simulator
 - GitHub
 
 ---
@@ -195,7 +208,11 @@ Topics Covered
 - REST API Integration
 - JSON Data Handling
 - ESP32 Programming
-- Sensor Interfacing
+- DHT Sensor Interfacing
+- Environmental Monitoring
+- CSV Data Logging
+- GPIO Programming
+- Wi-Fi Communication
 - Drone Fundamentals
 - Flight Controller Concepts
 - GPS Navigation
@@ -211,12 +228,40 @@ Topics Covered
 
 By the end of Week 03, I was able to:
 
-- Connect ESP32 with online REST APIs.
-- Process and display live weather data.
-- Interface multiple sensors with ESP32.
+- Connect the ESP32 to REST APIs.
+- Retrieve and process live weather data.
+- Interface DHT sensors with the ESP32.
+- Develop an Environmental Monitoring Station.
+- Monitor temperature and humidity in real time.
+- Convert temperature between Celsius and Fahrenheit.
+- Generate structured CSV sensor logs.
+- Implement threshold-based LED indication.
 - Understand drone architecture and navigation systems.
 - Configure basic drone flight modes.
-- Learn Mission Planner software.
-- Develop and optimize a complete IoT application.
-- Present an engineering project professionally.
-- Strengthen practical knowledge of embedded systems and IoT.
+- Use Mission Planner for flight configuration.
+- Develop and optimize complete IoT applications.
+- Present engineering projects professionally.
+- Strengthen practical knowledge of embedded systems, IoT, and drone technologies.
+
+---
+
+## References
+
+- Arduino Documentation – https://docs.arduino.cc/
+- ESP32 Arduino Documentation – https://docs.espressif.com/projects/arduino-esp32/
+- Open-Meteo API – https://open-meteo.com/
+- Wokwi Documentation – https://docs.wokwi.com/
+- Mission Planner Documentation – https://ardupilot.org/planner/
+- GitHub Documentation – https://docs.github.com/
+
+---
+
+## Author
+
+**P Meet Kumar**
+
+**Roll Number:** IoT 009
+
+**Program:** IoT and Drone Building Summer School 2026
+
+**Institution:** Indian Institute of Technology Jammu (IIT Jammu)
