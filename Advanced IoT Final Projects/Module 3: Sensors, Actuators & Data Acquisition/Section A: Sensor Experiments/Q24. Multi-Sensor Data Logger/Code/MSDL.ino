@@ -17,7 +17,7 @@ Serial Monitor.
 
 // Pin Definitions
 #define DHTPIN 7
-#define DHTTYPE DHT11
+#define DHTTYPE DHT22
 
 #define LDR_PIN A0
 
@@ -78,7 +78,8 @@ void loop() {
     int ldrRaw = analogRead(LDR_PIN);
 
     // Convert LDR value into percentage
-    int lightPercent = map(ldrRaw, 0, 1023, 0, 100);
+    int lightPercent = map(ldrRaw, 1023, 0, 0, 100);
+    lightPercent = constrain(lightPercent, 0, 100);
 
     // Determine light condition
     String lightStatus;
