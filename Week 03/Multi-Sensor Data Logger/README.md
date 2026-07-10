@@ -112,14 +112,15 @@ This project includes:
 
 ## Wokwi Simulation
 
-The project was successfully implemented and tested using the **Wokwi Online Simulator**, validating:
+**Simulation Link**
 
-- Multi-sensor interfacing
-- Temperature and humidity monitoring
-- Ambient light sensing
-- Ultrasonic distance measurement
-- Structured sensor logging
-- Non-blocking programming using `millis()`
+https://wokwi.com/projects/469191765522067457
+
+**Description**
+
+The project was successfully implemented and tested using the **Wokwi Online Simulator**. The simulation demonstrates the simultaneous acquisition of temperature, humidity, ambient light intensity, and distance measurements using a DHT22 sensor, LDR sensor, and HC-SR04 ultrasonic sensor.
+
+The system collects data from all three sensors every **5 seconds**, converts the LDR reading into a percentage with brightness classification, measures the distance in centimeters, and displays all values in the required structured format on the Serial Monitor. The implementation uses the `millis()` function for non-blocking execution, ensuring continuous sensor monitoring while maintaining accurate periodic data logging.
 
 ---
 
