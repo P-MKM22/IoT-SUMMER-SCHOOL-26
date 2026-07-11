@@ -140,6 +140,31 @@ Enter any of the supported commands (`R`, `G`, `B`, `X`, `F`) to simulate Blueto
 
 ---
 
+## HC-05 Pairing Instructions
+
+> **Note:** Bluetooth communication is simulated using the Arduino Serial Monitor in Wokwi because the HC-05 module is not currently supported. The following steps apply when implementing this project on physical hardware.
+
+1. Connect the HC-05 Bluetooth module to the Arduino Uno.
+2. Power the Arduino and ensure the HC-05 LED is blinking.
+3. Enable Bluetooth on your Android smartphone.
+4. Search for available Bluetooth devices.
+5. Select **HC-05** from the device list.
+6. Enter the default pairing PIN:
+   - **1234**, or
+   - **0000** (depending on the module configuration).
+7. Open a Bluetooth Terminal application and connect to the paired HC-05 module.
+8. Send the supported commands to control the LEDs.
+
+| Command | Action |
+|----------|--------|
+| **R** | Turn ON the Red LED |
+| **G** | Turn ON the Green LED |
+| **B** | Turn ON the Blue LED |
+| **X** | Turn OFF all LEDs |
+| **F** | Flash all LEDs five times |
+
+---
+
 ## Working Principle
 
 The Arduino continuously monitors incoming characters from the Serial Monitor. Each received command represents a Bluetooth command that would normally be transmitted by an HC-05 module. Depending on the received character, the corresponding LED operation is executed. Invalid commands are rejected and an appropriate message is displayed on the Serial Monitor.
