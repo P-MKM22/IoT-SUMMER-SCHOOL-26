@@ -1,0 +1,32 @@
+Heart Rate & SpO2 Monitor by PMeet Kumar
+
+Smart Health Monitoring System Started
+
+Time(s),Temperature(C),HeartRate(BPM),SpO2(%),Fall,Status
+3,53.3,60,90,NO,HIGH TEMP
+5,53.3,60,90,NO,HIGH TEMP
+7,7.6,60,90,NO,LOW SPO2
+9,7.6,60,90,NO,LOW SPO2
+11,7.6,60,90,NO,LOW SPO2
+13,7.6,60,98,NO,NORMAL
+15,7.6,60,100,NO,NORMAL
+17,29.9,60,100,NO,NORMAL
+19,29.9,60,100,NO,NORMAL
+21,29.9,79,100,NO,NORMAL
+23,29.9,79,100,NO,NORMAL
+25,29.9,116,100,NO,HIGH BPM
+27,29.9,116,100,NO,HIGH BPM
+29,29.9,116,100,NO,HIGH BPM
+31,29.9,116,100,NO,HIGH BPM
+33,29.9,116,100,YES,EMERGENCY
+
+Emergency alarm acknowledged.
+Emergency alarm acknowledged.
+Emergency alarm acknowledged.
+Emergency alarm acknowledged.
+  
+35,29.9,116,100,YES,EMERGENCY
+
+
+
+
