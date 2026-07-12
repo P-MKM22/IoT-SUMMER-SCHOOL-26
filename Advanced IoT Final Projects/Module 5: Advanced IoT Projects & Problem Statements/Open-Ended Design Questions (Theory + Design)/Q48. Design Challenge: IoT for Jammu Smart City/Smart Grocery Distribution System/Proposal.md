@@ -182,31 +182,31 @@ The system minimizes human intervention, improves transparency, and ensures accu
 # Repository Structure
 
 ```text
-IoT-SUMMER-SCHOOL-26
-│
-├── final_project
-│   │
-│   ├── smart_city_proposal.md
-│   │
-│   └── Smart Grocery Distribution System
-│       │
-│       ├── Assets
-│       │   ├── Hardware Setup.png
-│       │   ├── System Architecture.png
-│       │   ├── Output Screenshot.png
-│       │   └── Demonstration.mp4
-│       │
-│       ├── Code
-│       │   └── Smart_Grocery_System.ino
-│       │
-│       ├── Data
-│       │   └── Sample_Transactions.csv
-│       │
-│       └── README.md
+## Project Structure
+
+```text
+IoT Summer School 2026
+└── Advanced IoT Final Project
+    └── Module 5 – Open-ended Design Question (Theory + Design)
+        └── Q48 – Design Challenge: IoT for Jammu Smart City
+            └── Smart Grocery Distribution System
+                │
+                ├── Code
+                │   ├── Config.h
+                │   ├── Credentials.h
+                │   ├── Beneficiaries.h
+                │   ├── Display_Manager.h
+                │   ├── RFID_Manager.h
+                │   ├── Inventory_Manager.h
+                │   ├── Transaction_Manager.h
+                │   ├── Cloud_Manager.h
+                │   ├── Alert_Manager.h
+                │   ├── Helper_Functions.h
+                │   └── Smart_Grocery_System.ino
+                │
+                └── Proposal.md
 ```
-
 ---
-
 # Conclusion
 
 The Smart Grocery Distribution System demonstrates how IoT technologies can significantly improve the efficiency, transparency, and reliability of government welfare distribution. By integrating digital authentication, automated quantity measurement, inventory monitoring, and cloud connectivity, the proposed system minimizes human intervention while ensuring that subsidized groceries reach eligible beneficiaries accurately and securely. The solution also provides a scalable framework that can be deployed across multiple government ration distribution centers as part of future Smart City initiatives.
