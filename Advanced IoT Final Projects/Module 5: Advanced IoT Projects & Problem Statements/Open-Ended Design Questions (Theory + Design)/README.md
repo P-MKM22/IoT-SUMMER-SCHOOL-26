@@ -15,9 +15,6 @@ Together, these directories provide a comprehensive assessment of both the theor
 # Directory Structure
 
 ```text
-# Directory Structure
-
-```text
 Open-Ended Design Questions (Theory + Design)
 │
 ├── Q48. Design Challenge: IoT for Jammu Smart City
