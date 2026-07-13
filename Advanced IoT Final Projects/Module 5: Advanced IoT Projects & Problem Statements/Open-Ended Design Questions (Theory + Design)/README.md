@@ -15,20 +15,35 @@ Together, these directories provide a comprehensive assessment of both the theor
 # Directory Structure
 
 ```text
-Open-Ended Design Questions (Theory + Design)
+Advanced IoT Final Projects
 │
-├── Q48. Design Challenge: IoT for Jammu Smart City
-│   ├── Intelligent Waste Management System
-│   ├── Smart Clinic System
-│   ├── Smart Fire Detection and Emergency Response System
-│   ├── Smart Grocery Distribution System
-│   ├── Smart Parking Availability and Management System
-│   ├── Smart Street Lighting System
+├── Module 5: Advanced IoT Projects & Problem Statements
+│   │
+│   ├── Open-Ended Design Questions (Theory + Design)
+│   │   │
+│   │   ├── Q48. Design Challenge: IoT for Jammu Smart City
+│   │   │   ├── Intelligent Waste Management System
+│   │   │   ├── Smart Clinic System
+│   │   │   ├── Smart Fire Detection and Emergency Response System
+│   │   │   ├── Smart Grocery Distribution System
+│   │   │   ├── Smart Parking Availability and Management System
+│   │   │   ├── Smart Street Lighting System
+│   │   │   └── README.md
+│   │   │
+│   │   └── README.md
+│   │
 │   └── README.md
 │
 ├── Theory Questions
-│   ├── Q49. Security Vulnerability Analysis
-│   ├── Q50. Reflection and Learning Portfolio
+│   │
+│   ├── Open-Ended Design Questions (Theory + Design)
+│   │   │
+│   │   ├── Q49. Security Vulnerability Analysis   
+│   |   |    └── README.md
+│   │   ├── Q50. Reflection and Learning Portfolio
+|   |   |    └── README.md
+│   │   └── README.md
+│   │
 │   └── README.md
 │
 └── README.md
